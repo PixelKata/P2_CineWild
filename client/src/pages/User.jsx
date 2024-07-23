@@ -1,5 +1,7 @@
 import "../styles/user.css";
 import { useEffect } from "react";
+import ProfilBackground from "../assets/images/profil_background.jpg";
+import ProfilAvatar from "../assets/images/profil_avatar.svg";
 
 function User() {
   useEffect(() => {
@@ -12,15 +14,15 @@ function User() {
         <div className="backgroundUser">
           <img
             className="backgroundUserImg"
-            src="../src/assets/images/profil_background.jpg"
-            alt=""
+            src={ProfilBackground}
+            alt="Profil_Background_User"
           />
         </div>
         <div className="avatarUser">
           <img
             className="avatarUserImg"
-            src="../src/assets/images/profil_avatar.svg"
-            alt=""
+            src={ProfilAvatar}
+            alt="Profil_Avatar_User"
           />
         </div>
       </div>
